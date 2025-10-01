@@ -1,0 +1,111 @@
+.popularId {
+  width: 100%;
+  padding: 0 0 60px 0;
+  background: linear-gradient(180deg, #1f1c3f, #04011c);
+  color: #fff;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+    i {
+      font-family: var(--font-montserrat), sans-serif;
+      color: #ff6b6b;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 130%;
+      text-align: center;
+      color: rgba(30, 224, 225, 1);
+    }
+  }
+
+  .sort {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .item {
+      position: relative;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1;
+
+      .bgImg {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    .active {
+      font-size: 22px;
+      color: #fff;
+    }
+  }
+}
+
+.popularAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  button {
+    position: relative;
+    padding: 10px 32px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0px 30px rgba(255, 23, 189, 0.3);
+
+    &:hover {
+      background: rgba(255, 23, 189, 0.1);
+      box-shadow: 0 0px 18px rgba(255, 23, 189, 0.5);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1.5px;
+      border-radius: inherit;
+      background: linear-gradient(
+        270deg,
+        rgba(229, 10, 167, 0.16) 0%,
+        rgba(255, 23, 189, 1) 100%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+  }
+}

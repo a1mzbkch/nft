@@ -1,0 +1,126 @@
+.welcomeId {
+  padding: 180px 0 100px 0;
+  width: 100%;
+  background: linear-gradient(360deg, #1f1c3f, #04011c);
+  color: #fff;
+}
+
+.container {
+  padding: 0 0 0 160px;
+}
+
+.welcome {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcomeLeft {
+  max-width: 700px;
+  position: relative;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #ffffff;
+
+    i {
+      color: #1ee0e1;
+      font-weight: 200;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 50px 0px;
+    color: #ccc;
+  }
+
+  .exploreBtn {
+    font-family: var(--font-montserrat), sans-serif;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 28, 255, 1) -10%,
+      rgba(234, 0, 112, 1) 110%
+    );
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 9px 100px 0px rgba(208, 17, 204, 0.35);
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 12px 120px 0px rgba(208, 17, 204, 0.5);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0px 9px 100px 0px rgba(208, 17, 204, 0.35);
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 240px;
+    right: -55px;
+  }
+}
+
+.welcomeRight {
+  position: relative;
+  img {
+    position: absolute;
+    top: -416px;
+    right: 0;
+    max-width: 850px;
+    height: auto;
+  }
+}
+
+.welcomeStatic {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeTitle {
+  padding: 100px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-family: var(--font-montserrat), sans-serif;
+  h1 {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.welcomeColum {
+  display: flex;
+  gap: 50px;
+}
+
+.welcomeCount {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  h3 {
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ccc;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 118%;
+    color: rgba(255, 255, 255, 1);
+  }
+}
