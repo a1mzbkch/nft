@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Welcome.module.scss";
 import Image from "next/image";
-import welcomeImage from "@/assets/images/welcome.svg";
+import welcomeImage from "@/assets/Images/welcome.svg";
 import eyes from "@/assets/Images/eye.svg";
 import img from "@/assets/Images/img.svg";
 
